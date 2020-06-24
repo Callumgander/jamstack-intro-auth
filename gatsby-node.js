@@ -1,6 +1,6 @@
-exports.onCreatePage = ({ page, action }) => {
+exports.onCreatePage = ({ page, actions }) => {
     if (page.path.match(/^\/dashboard/)) {
         page.matchPath = '/dashboard/*';
-        action.createPage(page);
+        actions.createPage(page);
     }
 }
